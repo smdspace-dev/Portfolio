@@ -1,0 +1,294 @@
+/* Ensure the wrapper takes the full viewport height */
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Sidebar styling (Desktop: vertical sidebar, Mobile: full-screen overlay) */
+  .sidebar {
+    width: 64px; /* Mini state (icons only) */
+    transition: width 0.3s ease;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000; /* Ensure sidebar is above other elements */
+    font-family: 'Fira Code', monospace;
+    background-color: #212529;
+  }
+  
+  /* Expand sidebar on hover (Desktop) */
+  .sidebar:hover {
+    width: 200px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  /* Logo */
+  .logo {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+  /* Mobile controls (Search & Hamburger) */
+  .mobile-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-btn {
+    padding: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .search-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .hamburger {
+    padding: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .hamburger:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Navigation links container */
+  .nav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  /* Navigation links */
+  .nav-link {
+    white-space: nowrap;
+    transition: background-color 0.3s ease, color 0.3s ease, font-weight 0.3s ease, padding 0.3s ease;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Adjust padding and font size when sidebar is hovered */
+  .sidebar:hover .nav-link {
+    padding-left: 16px;
+    font-size: 1rem;
+  }
+  
+  /* Hover effect for nav links */
+  .nav-link:hover {
+    background-color: #ffc107 !important;
+    color: black !important;
+    font-weight: 500;
+  }
+  
+  /* Default icon color (yellow) */
+  .nav-link .bi {
+    fill: #ffca2c;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    transition: fill 0.3s ease, margin-right 0.3s ease;
+  }
+  
+  /* Icon color on hover (black) */
+  .nav-link:hover .bi {
+    fill: black !important;
+  }
+  
+  /* Active link styling */
+  .nav-link.active {
+    background-color: #ffc107;
+    color: black;
+    font-weight: 500;
+  }
+  
+  /* Icon color for active link (black) */
+  .nav-link.active .bi {
+    fill: black;
+  }
+  
+  /* Ensure SVGs are centered */
+  .bi {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  /* Hide text labels by default (mini state on desktop) */
+  .nav-text {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Show text labels when sidebar is hovered (desktop) */
+  .sidebar:hover .nav-text {
+    display: inline-block;
+    opacity: 1;
+    margin-left: 12px;
+  }
+  
+  /* Sidebar footer (Desktop only) */
+  .sidebar-footer {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding: 10px 0;
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+  }
+  
+  /* Add hover effect for sidebar footer */
+  .sidebar-footer:hover {
+    color: #ffc107;
+    font-weight: 600;
+  }
+  
+  /* Ensure no yellow underline exists */
+  .sidebar-footer::after {
+    display: none;
+  }
+  
+  /* Main content styling */
+  .main-content {
+    flex: 1;
+    min-height: 100vh;
+    background-color: #212529;
+    color: white;
+    padding: 1.5rem;
+    margin-left: 64px; /* Match mini sidebar width */
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    transition: margin-left 0.3s ease;
+    z-index: 1; /* Ensure main content doesn’t overlap sidebar */
+  }
+  
+  .main-content h1, .main-content h2, .main-content h3 {
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    color: #ffc107;
+  }
+  
+  .main-content p {
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar:hover ~ .main-content {
+    margin-left: 200px; /* Match expanded sidebar width */
+  }
+  
+  /* Mobile layout: Top navbar with hamburger menu */
+  @media (max-width: 576px) {
+    .wrapper {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      flex-direction: column;
+    }
+  
+    .header {
+      justify-content: space-between;
+      padding: 8px 12px;
+    }
+  
+    .logo {
+      display: block;
+    }
+  
+    /* Remove yellow underline from mobile logo */
+    .logo::after {
+      display: none;
+    }
+  
+    /* Mobile sidebar content */
+    .mobile-sidebar-content {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #212529;
+      z-index: 1001;
+      overflow-y: auto;
+    }
+  
+    .mobile-sidebar-content.show {
+      display: block;
+    }
+  
+    /* Search bar in mobile sidebar */
+    .search-bar {
+      padding: 16px;
+    }
+  
+    .search-bar input {
+      background-color: #343a40;
+      border: 1px solid #ffc107;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+    }
+  
+    .search-bar input::placeholder {
+      color: #adb5bd;
+    }
+  
+    .nav {
+      flex-direction: column;
+    }
+  
+    .nav-link {
+      padding: 16px;
+      font-size: 1.1rem;
+      justify-content: flex-start;
+    }
+  
+    .nav-text {
+      display: inline-block !important;
+      margin-left: 12px;
+    }
+  
+    .sidebar-footer {
+      display: none !important;
+    }
+  
+    .main-content {
+      margin-left: 0;
+      padding: 1rem;
+    }
+  }
