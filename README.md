@@ -20,13 +20,16 @@
 
 <img align="right" alt="Developer" width="350" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
 
+<div align="center">
 I am a dedicated Software Engineer with expertise in enterprise application development and automation. With a comprehensive background in modern web technologies, Data science, and Cloud infrastructure, I specialize in transforming complex business requirements into scalable, efficient solutions.
+</div>
 
 **Core Competencies:**
+
 - **Enterprise Software Development** - Building robust, scalable applications
 - **Process Automation** - Streamlining business operations through technology
-- **Full-Stack Development** - End-to-end application development expertise
 - **Data Science & AI** - Leveraging machine learning for business insights
+- **Full-Stack Development** - End-to-end application development expertise
 - **Cloud Infrastructure** - Azure-based solutions and DevOps practices
 
 **Current Position:** Software Developer at TTG Pvt Ltd, UK, focusing on enterprise application automation and cloud infrastructure development.
@@ -112,16 +115,16 @@ I am a dedicated Software Engineer with expertise in enterprise application deve
 ![Power BI](https://img.shields.io/badge/Power_BI_PL--300-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 
 ### Professional Development
-- **Full Stack Python Development** (Advanced Level)
-- **Data Science & Analytics** (Professional Certification)
-- **Business Analytics** (Certified Professional)
-- **Angular Framework** (Advance Level)
-- **Microsoft .NET MVC** (Professional)
+**Full Stack Python Development** (Advanced Level)
+**Data Science & Analytics** (Professional Certification)
+**Business Analytics** (Certified Professional)
+**Angular Framework** (Advance Level)
+**Microsoft .NET MVC** (Professional)
 
 ### Continuous Learning
-- C# Programming for game development(Udemy)
-- Data Structures & Algorithms (Udemy)
-- Open Web UI Implementation (Specialized Training)
+**C# Programming for game development**(Udemy)
+**Data Structures & Algorithms** (Udemy)
+**Open Web UI Implementation** (Specialized Training)
 
 </div>
 
@@ -153,20 +156,20 @@ I am a dedicated Software Engineer with expertise in enterprise application deve
 
 ---
 
-## GitHub Statistics
+<!-- ## GitHub Statistics
 
 <div align="center">
 
 <img height="160em" src="https://github-readme-stats.vercel.app/api?username=THousifibrahim&show_icons=true&hide_border=true&count_private=true&theme=default&title_color=2B579A&icon_color=2B579A" />
 <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=THousifibrahim&layout=compact&hide_border=true&theme=default&title_color=2B579A" />
 
-</div>
+</div> -->
 
-<div align="center">
+<!-- <div align="center"> -->
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=THousifibrahim&theme=default&hide_border=true&stroke=2B579A&ring=2B579A&fire=2B579A)
+<!-- ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=THousifibrahim&theme=default&hide_border=true&stroke=2B579A&ring=2B579A&fire=2B579A)
 
-</div>
+</div> -->
 
 ---
 
@@ -176,7 +179,7 @@ I am a dedicated Software Engineer with expertise in enterprise application deve
 
 **Professional Inquiries**
 
-[![Email](https://img.shields.io/badge/📧%20ahilxdesigns@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:ahilxdesigns@gmail.com)
+[![Email](https://img.shields.io/badge/%20ahilxdesigns@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:ahilxdesigns@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/💼%20LinkedIn%20Profile-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/thousif-ibrahim-29050421b)
 [![GitHub](https://img.shields.io/badge/�%20GitHub%20Profile-171515?style=flat-square&logo=github&logoColor=white)](https://github.com/THousifibrahim)
 
